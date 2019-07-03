@@ -1,6 +1,6 @@
 # Localsing an AprilTag
 
-AprilTags are really good to work with and really helpful in robotics. Here i have made a very easy to use application which prints out the translation and the rotation(in Euler angles) of the tag.
+AprilTags are really good to work with and very helpful in robotics. Here i have made a very easy to use application which prints out the translation and the rotation(in Euler angles) of the tag.
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ It will print out the center of the tag in the frame.
 ```
 Localize.py
 ```
-##Important
+## Important
 
 You need to find the camera matrix for you camera seperatly, the script uses the matrix for my camera by your's surely will be diffrent. Thus you need to find the camera matrix yourself.
 
@@ -50,6 +50,10 @@ python Capture.py
 
 4) Use the following command and press Enter for good corner detection and Esc for bad ones (Calibration.py is taken from https://github.com/tizianofiorenzani/how_do_drones_work)
 
+```
+python Calibration.py Camera_01 jpg 8 6 25 
+```
+(8 is the number of corners row wise 6 is the number of corners column wise and 25 is the side length of square in checker board)
 ## Authors
 
 * **Mohit Singh**
